@@ -65,7 +65,7 @@
             bindings = <
   &kp TAB       &kp ESC    &kp K_BACK         &kp K_FIND  &kp K_FORWARD        &kp INS     &trans    &trans  &trans    &trans     &trans  &kp BSPC
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI     &kp LEFT_SHIFT      &kp LCTRL  &kp LS(LCTRL)     &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT    &trans
-&kp LSHFT        &kp LC     &kp LC(X)          &kp LC(C)      &kp LC(V)   &kp LEFT_GUI     &trans    &trans  &trans    &trans     &trans    &trans
+&kp LSHFT     &kp LC(Z)     &kp LC(X)          &kp LC(C)      &kp LC(V)   &kp LEFT_GUI     &trans    &trans  &trans    &trans     &trans    &trans
                                        &kp LC(LS(GRAVE))  &kp LC(LS(P))  &kp BACKSPACE  &kp SPACE     &none  &trans
             >;
         };
