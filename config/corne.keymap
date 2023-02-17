@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 / {
     combos {
@@ -23,10 +24,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-       &kp ESC  &kp Q  &kp W     &kp E  &kp R            &kp T      &kp Y  &kp U      &kp I    &kp O     &kp P  &kp DELETE
-&kp LEFT_SHIFT  &kp A  &kp S     &kp D  &kp F            &kp G      &kp H  &kp J      &kp K    &kp L  &kp SEMI   &kp ENTER
-     &kp LCTRL  &kp Z  &kp X     &kp C  &kp V            &kp B      &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH     &kp TAB
-                              &kp LGUI  &mo 1  &lt 1 BACKSPACE  &kp SPACE  &mo 2   &kp RALT
+       &kp ESC  &kp Q  &kp W           &kp E  &kp R            &kp T      &kp Y  &kp U      &kp I    &kp O     &kp P  &kp DELETE
+&kp LEFT_SHIFT  &kp A  &kp S           &kp D  &kp F            &kp G      &kp H  &kp J      &kp K    &kp L  &kp SEMI   &kp ENTER
+     &kp LCTRL  &kp Z  &kp X           &kp C  &kp V            &kp B      &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH     &kp TAB
+                              &lt 3 LEFT_GUI  &mo 1  &lt 1 BACKSPACE  &kp SPACE  &mo 2   &kp RALT
             >;
         };
 
@@ -57,6 +58,15 @@
 &kp LEFT_SHIFT   &kp HOME       &kp END        &kp PAGE_UP  &kp PAGE_DOWN     &kp KP_NUM     &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans
      &kp LCTRL  &kp LC(Z)     &kp LC(X)          &kp LC(C)      &kp LC(V)   &kp LEFT_GUI     &trans    &trans  &trans    &trans     &trans  &trans
                                          &kp LC(LS(GRAVE))  &kp LC(LS(P))  &kp BACKSPACE  &kp SPACE     &none  &trans
+            >;
+        };
+
+        BT {
+            bindings = <
+&bt BT_CLR      &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+    &trans  &bt BT_NXT  &bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans  &trans
+    &trans      &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans        &trans        &trans  &trans  &trans  &trans
             >;
         };
     };
